@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+
+$hammer : 'Hammersmith One', sans-serif;
+$playfair : 'Playfair Display', serif;
+$roboto : 'Roboto', sans-serif;
+
+body {
+    font-size: 16 px;
+    font-family:$roboto;
+    color: black;
+}
+
+.container {
+    
+    margin: 0 auto;
+    margin-left: 21px;
+    padding: 50px;
+}    
+
+.all {
+    display: flex;          
+    flex-direction: column;  
+    
+header {
+    max-width: 1440px;
+    max-height: 940px;
+    background-repeat: no-repeat;   
+    background-position: right top; 
+   
+       
+    .header {  
+        
+        nav {
+            display: flex;          
+            align-items: center;
+            
+            .nav-icon{
+                img {      
+                    padding-left: 50px;           
+                    padding-right: 275px;
+                   
+                }
+            }
+
+            .menu {
+                display: flex;
+                justify-content: space-between;
+                max-width: 808px;
+                min-height: 28px;
+                margin-left: 50px;
+                margin-right: 50px;
+                flex-basis: 250px;
+                float: right;
+                li {
+                    list-style-type: none;
+                    a {
+                        font-weight: bold;
+                        text-decoration: none;
+                        color: black;
+                        text-transform: uppercase;
+
+                        &.menu_active {
+                            color: #C08D5D;
+                        }
+
+                        &:hover {
+                            color: #C08D5D;
+                        }
+                    }
+                }
+            }
+            
+         
+            .mobile-menu-btn {
+                display: none;
+                cursor: pointer;
+                svg {
+                    width: 30px;
+                    height: 30px;
+                    fill: white;
+                }
+            }
+
+            @media screen and (max-width: 810px) {
+                .menu {
+                    flex-basis: 550px;
+                    font-size: 15px;
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                .mobile-menu-btn {
+                    display: block;
+                }
+                .menu {
+                    display: none;
+                }
+            }
+        }
+    }  
+    .farm {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 535px;
+        height: 940px;
+        left: 192px;
+        top: 308px;
+    
+        .group3 {
+               
+            height: 125px;            
+            top: 308px;
+            margin: 50px;
+        }
+        
+        .text {
+            margin: 50px;
+            height: 25px;
+        }
+    
+        .but {
+            display: flex;
+            margin: 50px;
+            width: 192px;
+            height: 64px;      
+            top: 308px;      
+        }
+    
+    } 
+}
+
+footer {
+    max-width: 1440px;
+    max-height: 940px;
+    .foot {  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     
+    }           
+}
+
+}
