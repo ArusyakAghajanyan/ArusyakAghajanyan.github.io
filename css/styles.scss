@@ -29,7 +29,7 @@ body {
     
 header {
     max-width: 1440px;
-    max-height: 940px;
+    min-height: 940px;
     background-repeat: no-repeat;   
     background-position: right top; 
    
@@ -83,7 +83,7 @@ header {
                 svg {
                     width: 30px;
                     height: 30px;
-                    fill: white;
+                    fill: #C08D5D;
                 }
             }
 
@@ -105,33 +105,29 @@ header {
         }
     }  
     .farm {
-        display: flex;
-        position: relative;
+        display: flex;        
         flex-direction: column;
-        justify-content: flex-start;
-        width: 535px;
-        height: 940px;
-        left: 192px;
-        top: 308px;
+        justify-content: center;
+        min-height: 1000px;
+        
+       
     
-        .group3 {
-               
-            height: 125px;            
-            top: 308px;
-            margin: 50px;
+        .group3 {               
+        
+            justify-content: flex-start;
         }
         
         .text {
-            margin: 50px;
-            height: 25px;
+            
+            max-width: 500px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            justify-content: flex-start;
         }
     
         .but {
-            display: flex;
-            margin: 50px;
-            width: 192px;
-            height: 64px;      
-            top: 308px;      
+            display: flex;            
+            justify-content: flex-start;                
         }
     
     } 
